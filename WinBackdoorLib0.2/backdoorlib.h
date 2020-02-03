@@ -14,8 +14,6 @@
 #include <direct.h>
 #include <stdexcept>
 
-using namespace std;
-
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #include <wininet.h> //-lwininet
