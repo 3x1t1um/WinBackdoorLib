@@ -1,0 +1,1 @@
+g++ backdoorlib.cpp test_lib.cpp -o test.exe -lws2_32 -s -ffunction-sections -fdata-sections -Wno-write-strings -fno-exceptions -fmerge-all-constants -static-libstdc++ -static-libgcc -std=c++11 -lkernel32 -luser32 -lgdi32 -lwinspool -lwininet -lole32 -loleaut32 -luuid -Wconversion-null
