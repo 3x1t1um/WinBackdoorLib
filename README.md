@@ -50,7 +50,7 @@ int main()
 ```cpp
 void hello_world(void);
 char * raw_input(char *input_string);
-int input(char *input_string);
+int input(int *input);
 void clear(void);
 int substring_in_string(char *substring,char *string);
 void print(char *string);
