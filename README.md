@@ -50,7 +50,7 @@ int main()
 ```cpp
 void hello_world(void);
 char * raw_input(char *input_string);
-int input(int *input);
+int input(char *input_string);
 void clear(void);
 int substring_in_string(char *substring,char *string);
 void print(char *string);
@@ -90,4 +90,13 @@ string xor_string_enc_dec(string data, char key[]);
 int xor_logic(int a, int b);
 bool bool_xor_logic(bool a, bool b);
 int getpid(const string& process_name);
+string string_to_shellcode(string buffer);
+string hex_to_shellcode(string buffer);
+BOOL check_admin(void);
+string read_file(string filename,string buffer_return);
+string read_file_binary(string filename,string buffer_return);
+string read_file_to_hex(string filename,string buffer_return);
+string read_file_binary_to_hex(string filename,string buffer_return);
+void open_process(LPCSTR process,LPCSTR args,LPCSTR dir);
+char *get_system_info_by_powershell(char* buffer, char* mode);
 ```
